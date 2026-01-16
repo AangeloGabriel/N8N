@@ -9,8 +9,8 @@ def main():
     Organizado = OrdenaLista(Pastas)
 
     Processados = Processa(Organizado)
-
+    
     Salva(Processados)
-
+ 
 if __name__  == "__main__":
     main()

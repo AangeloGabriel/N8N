@@ -1,10 +1,13 @@
+from dotenv import load_dotenv
 import pandas as pd
 import os
 
+load_dotenv()
+
+PATH_SAVE = os.getenv("PATH_SAVE")
+FORMAT = "Amazon_Geral.xlsx"
+
 def Salva(Arquivo):
-    
-    PATH_SAVE = r"S:\S&OP e Produtos\Compartilhado\S&OP\N8N\Automacoes\amazon_scraping\Consolidado"
-    FORMAT = "Amazon_Geral.xlsx"
 
     arquivo_final = os.path.join(PATH_SAVE, FORMAT)
     

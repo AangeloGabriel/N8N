@@ -1,7 +1,12 @@
+from dotenv import load_dotenv
 import os 
 
+load_dotenv()
+
+PATH = os.getenv("PATH_AMAZON")
+
 def LeitorPastas():
-    PATH = 'C:/n8n-data/arquivos/amazon_scraping'
+    
     resultado = []
 
     for arquivo in os.listdir(PATH):
