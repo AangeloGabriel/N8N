@@ -1,8 +1,6 @@
 import os 
-from leitor import LeitorPastas
 
-def OrdenaLista():
-    CaminhoArquivos = LeitorPastas()
+def OrdenaLista(CaminhoArquivos):
 
     listaNomes = []
     for arquivos in CaminhoArquivos:    
@@ -22,13 +20,3 @@ def OrdenaLista():
                 listaorganizada[datas].append(caminho)
 
     return listaorganizada
-
-
-# for datas in listaNomes:
-#     if datas not in listaorganizada:
-#         novo = {datas: []}
-#         listaorganizada.update(novo)
-#     if datas in listaorganizada:
-#         for caminho in CaminhoArquivos:
-#             if os.path.basename(caminho) == datas:
-#                 listaorganizada[datas].append(caminho)

@@ -2,9 +2,8 @@ from organizador import OrdenaLista
 import pandas as pd
 import os
 
-def Processa():
+def Processa(ListaOrdenada):
 
-    ListaOrdenada = OrdenaLista()
     Tabela = pd.DataFrame()
 
     for data, lista_caminhos in ListaOrdenada.items():
